@@ -1,5 +1,6 @@
 # Download
-[https://raw.githubusercontent.com/yikuansun/daize.js/master/daize.js](https://raw.githubusercontent.com/yikuansun/daize.js/master/daize.js)
+[https://yikuansun.github.io/daize.js/daize.js](https://yikuansun.github.io/daize.js/daize.js)  
+or import the library from online: `<script src="https://yikuansun.github.io/daize.js/daize.js"></script>`
 
 # Documentation
 
