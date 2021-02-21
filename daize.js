@@ -128,15 +128,12 @@ const daize = {
         }
 
         boxcollision(othersprite) {
-            if (this.x <= othersprite.x + othersprite.width &&
-                this.x + this.width >= othersprite.x &&
-                this.y <= othersprite.y + othersprite.height &&
-                this.y + this.height >= othersprite.y) {
-                return true;
-            }
-            else {
-                return false;
-            }
+            return (
+                parseFloat(this.style.top) + parseFloat(this.style.height) >= parseFloat(othersprite.style.top) &&
+                parseFloat(this.style.left) + parseFloat(this.style.width) >= parseFloat(othersprite.style.left) &&
+                parseFloat(this.style.top) <= parseFloat(othersprite.style.top) + parseFloat(othersprite.style.height) &&
+                parseFloat(this.style.left) <= parseFloat(othersprite.style.left) + parseFloat(othersprite.style.width)
+            );
         }
     }
 };
