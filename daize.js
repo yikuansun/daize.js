@@ -26,7 +26,7 @@ const daize = {
             this.style.width = this.width.toString() + this.unit_type;
             this.style.height = this.height.toString() + this.unit_type;
             this.style.backgroundColor = "aliceblue";
-            this.style.display = "inline-block";
+            this.style.display = "block";
             this.style.position = "relative";
             this.style.overflow = "hidden";
         }
