@@ -126,6 +126,18 @@ const daize = {
         set costume(newval) {
             this.setAttribute("costume", newval);
         }
+
+        boxcollision(othersprite) {
+            if (this.x <= othersprite.x + othersprite.width &&
+                this.x + this.width >= othersprite.x &&
+                this.y <= othersprite.y + othersprite.height &&
+                this.y + this.height >= othersprite.y) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
     }
 };
 customElements.define( "daize-canvas", daize.displayCanvas );
