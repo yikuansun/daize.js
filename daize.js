@@ -58,8 +58,9 @@ const daize = {
             this.angle = angle;
             this.unit_type = unit_type;
             this.costume = "";
+            this.visibility = 1;
         }
-        static get observedAttributes() { return ["width", "height", "x", "y", "angle", "costume"]; }
+        static get observedAttributes() { return ["width", "height", "x", "y", "angle", "costume", "visibility"]; }
         attributeChangedCallback(name, oldValue, newValue) {
             switch(name) {
                 case "width":
@@ -81,6 +82,9 @@ const daize = {
                     this.style.backgroundImage = "url('" + newValue + "')";
                     this.style.backgroundSize = "100% 100%";
                     this.style.backgroundRepeat = "no-repeat";
+                    break;
+                case "visibility":
+                    this.style.opacity = this.visibility.toString();
             }
         }
         connectedCallback() {
@@ -109,6 +113,9 @@ const daize = {
         get costume() {
             return this.getAttribute("costume");
         }
+        get visibility() {
+            return parseFloat(this.getAttribute("visibility"));
+        }
         set x(newval) {
             this.setAttribute("x", newval);
         }
@@ -126,6 +133,9 @@ const daize = {
         }
         set costume(newval) {
             this.setAttribute("costume", newval);
+        }
+        set visibility(newval) {
+            this.setAttribute("visibility", newval);
         }
 
         boxcollision(othersprite) {

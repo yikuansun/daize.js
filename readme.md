@@ -23,12 +23,13 @@ create: `mycanvas = new daize.displayCanvas(width, height, unit_type)` where `wi
 create: `mysprite = new daize.sprite(w, h, x, y, angle, unit_type)` where `w` and `h` are the dimensions, `x` and `y` specify the center position of the sprite on the canvas ((0, 0) is the top left corner), and `angle` is the sprite's rotation in radians. See [displayCanvas](#displayCanvas) for info on `unit_type`. To add `mysprite` to a displayCanvas, use `displayCanvas.addsprite(sprite)`.
   
 Sprites have the following attributes:  
-`sprite.costume` - the URI of the sprite's fill image  
+`sprite.costume` - the URI of the sprite's fill image.  
 `sprite.x` - the X position of the sprite.  
 `sprite.y` - the Y position of the sprite.  
 `sprite.width` - the width of the sprite.  
 `sprite.height` - the height of the sprite.  
 `sprite.angle` - the angle of the sprite.  
+`sprite.visibility` - the visibility of the sprite; a number between 0 (hidden) and 1 (opaque).  
   
 Sprites have the following methods:  
 `sprite.remove()` - delete the sprite from its displayCanvas  
