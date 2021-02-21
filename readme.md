@@ -20,11 +20,11 @@ create: `mysprite = new daize.sprite(w, h, x, y, angle, unit_type)` where `w` an
   
 Sprites have the following attributes:  
 `sprite.costume` - the URI of the sprite's fill image  
-`sprite.x` - the X position of the sprite. See [sprite](#sprite) for clarification.  
-`sprite.y` - the Y position of the sprite. See [sprite](#sprite) for clarification.  
-`sprite.width` - the width of the sprite. See [sprite](#sprite) for clarification.  
-`sprite.height` - the height of the sprite. See [sprite](#sprite) for clarification.  
-`sprite.angle` - the angle of the sprite. See [sprite](#sprite) for clarification.  
+`sprite.x` - the X position of the sprite.  
+`sprite.y` - the Y position of the sprite.  
+`sprite.width` - the width of the sprite.  
+`sprite.height` - the height of the sprite.  
+`sprite.angle` - the angle of the sprite.  
   
 Sprites have the following methods:  
 `sprite.remove()` - delete the sprite from its displayCanvas  
