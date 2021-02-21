@@ -30,6 +30,7 @@ Sprites have the following attributes:
 `sprite.angle` - the angle of the sprite.  
 `sprite.costume` - the URI of the sprite's fill image.  
 `sprite.visibility` - the visibility of the sprite; a number between 0 (hidden) and 1 (opaque).  
+`sprite.layer` - the stack order of the sprite.  
   
 Sprites have the following methods:  
 `sprite.remove()` - delete the sprite from its displayCanvas  

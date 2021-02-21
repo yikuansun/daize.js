@@ -59,8 +59,9 @@ const daize = {
             this.unit_type = unit_type;
             this.costume = "";
             this.visibility = 1;
+            this.layer = 1;
         }
-        static get observedAttributes() { return ["width", "height", "x", "y", "angle", "costume", "visibility"]; }
+        static get observedAttributes() { return ["width", "height", "x", "y", "angle", "costume", "visibility", "layer"]; }
         attributeChangedCallback(name, oldValue, newValue) {
             switch(name) {
                 case "width":
@@ -85,6 +86,10 @@ const daize = {
                     break;
                 case "visibility":
                     this.style.opacity = this.visibility.toString();
+                    break;
+                case "layer":
+                    this.style.zIndex = this.layer.toString();
+                    break;
             }
         }
         connectedCallback() {
@@ -116,6 +121,9 @@ const daize = {
         get visibility() {
             return parseFloat(this.getAttribute("visibility"));
         }
+        get layer() {
+            return parseFloat(this.getAttribute("layer"));
+        }
         set x(newval) {
             this.setAttribute("x", newval);
         }
@@ -136,6 +144,9 @@ const daize = {
         }
         set visibility(newval) {
             this.setAttribute("visibility", newval);
+        }
+        set layer(newval) {
+            this.setAttribute("layer", newval);
         }
 
         boxcollision(othersprite) {
