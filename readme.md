@@ -1,4 +1,4 @@
-## Download
+# Download
 [https://raw.githubusercontent.com/yikuansun/daize.js/master/daize.js](https://raw.githubusercontent.com/yikuansun/daize.js/master/daize.js)
 
 # Documentation
