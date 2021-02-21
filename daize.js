@@ -28,6 +28,7 @@ const daize = {
             this.style.backgroundColor = "aliceblue";
             this.style.display = "inline-block";
             this.style.position = "relative";
+            this.style.overflow = "hidden";
         }
         get width() {
             return parseFloat(this.getAttribute("width"));
@@ -88,7 +89,6 @@ const daize = {
             this.style.left = (this.x - this.width / 2).toString() + this.unit_type;
             this.style.transform = "rotate(" + this.angle.toString() + ")";
             this.style.position = "absolute";
-            this.style.overflow = "hidden";
         }
         get x() {
             return parseFloat(this.getAttribute("x"));
