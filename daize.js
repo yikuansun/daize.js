@@ -57,6 +57,7 @@ const daize = {
             this.y = y;
             this.angle = angle;
             this.unit_type = unit_type;
+            this.costume = "";
         }
         static get observedAttributes() { return ["width", "height", "x", "y", "angle", "costume"]; }
         attributeChangedCallback(name, oldValue, newValue) {
