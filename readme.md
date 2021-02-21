@@ -1,3 +1,6 @@
+# About
+daize.js is an interactive graphics library for clientside JavaScript. It is light and easy to use. It was inspired by [Scratch](https://scratch.mit.edu)
+
 # Download
 [https://yikuansun.github.io/daize.js/daize.js](https://yikuansun.github.io/daize.js/daize.js)  
 or import the library from online: `<script src="https://yikuansun.github.io/daize.js/daize.js"></script>`
