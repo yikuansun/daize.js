@@ -33,5 +33,6 @@ Sprites have the following attributes:
 `sprite.layer` - the stack order of the sprite.  
   
 Sprites have the following methods:  
-`sprite.remove()` - delete the sprite from its displayCanvas  
+`sprite.remove()` - delete the sprite from its displayCanvas.  
 `sprite.boxcollision(othersprite)` - detect if two sprites' bounding boxes are touching.  
+`sprite.addEventListener(type, listener)` - add a `type` event listener which executes function `listener`. Types include onclick, onmouseover, etc.  
