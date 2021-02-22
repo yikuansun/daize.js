@@ -57,7 +57,6 @@ function gameLoop() {
         }
     }
     mysprite.movevec(velocity_up, Math.PI / 2);
-    mysprite.stamp();
     requestAnimationFrame(gameLoop);
 }
 
