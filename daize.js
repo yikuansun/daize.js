@@ -161,6 +161,12 @@ const daize = {
                 parseFloat(this.style.left) <= parseFloat(othersprite.style.left) + parseFloat(othersprite.style.width)
             );
         }
+        stamp() {
+            var cloned = this.cloneNode(true);
+            cloned.setAttribute("class", "stamp");
+            cloned.layer = 0;
+            this.parentElement.appendChild(cloned);
+        }
     }
 };
 customElements.define( "daize-canvas", daize.displayCanvas );
