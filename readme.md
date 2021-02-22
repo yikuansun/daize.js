@@ -17,6 +17,14 @@ To import the library, use a `script` tag in the HTML.
 
 create: `mycanvas = new daize.displayCanvas(width, height, unit_type)` where `width` and `height` are the dimensions and `unit_type` is the CSS unit type (`px`, `vw`...). We'd recommend storing a global constant unit type to reuse for every function requiring `unit_type`. You must use `HTMLElement.appendChild(displayCanvas)` to add the displayCanvas to the DOM.
 
+displayCanvases have the following attributes:  
+`displayCanvas.width` - the width of the displayCanvas.  
+`displayCanvas.height` - the height of the displayCanvas.  
+  
+displayCanvases have the following methods:  
+`displayCanvas.addsprite(sprite)` - add a [sprite](#sprite) to the displayCanvas.  
+`displayCanvas.clearstamps()` - clear all stamps. See `sprite.stamp()`  
+
 ## sprite
 > objects to display within the displayCanvas
 
@@ -37,3 +45,4 @@ Sprites have the following methods:
 `sprite.movevec(magnitude, direction)` - move `magnitude` units at an angle of `direction` radians.  
 `sprite.boxcollision(othersprite)` - detect if two sprites' bounding boxes are touching.  
 `sprite.addEventListener(type, listener)` - add a `type` event listener which executes function `listener`. Types include onclick, onmouseover, etc.  
+`sprite.stamp()` - stamp the image of the sprite onto its [displayCanvas](#displayCanvas).  
