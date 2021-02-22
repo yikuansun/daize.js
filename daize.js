@@ -47,6 +47,12 @@ const daize = {
             if (sprite.tagName.toLowerCase() == "daize-sprite") this.appendChild(sprite);
             else throw "daize error: not a sprite!";
         }
+        deleteallsprites() {
+            var x = 0;
+            while (x < this.childElementCount) {
+                this.childNodes[x].remove();
+            }
+        }
         clearstamps() {
             var x = 0;
             while (x < this.childElementCount) {

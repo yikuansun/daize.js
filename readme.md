@@ -23,6 +23,7 @@ displayCanvases have the following attributes:
   
 displayCanvases have the following methods:  
 `displayCanvas.addsprite(sprite)` - add a [sprite](#sprite) to the displayCanvas.  
+`displayCanvas.deleteallsprites()` - delete all of the sprites in the displayCanvas.  
 `displayCanvas.clearstamps()` - clear all stamps. See `sprite.stamp()`  
 
 ## sprite
