@@ -47,6 +47,17 @@ const daize = {
             if (sprite.tagName.toLowerCase() == "daize-sprite") this.appendChild(sprite);
             else throw "daize error: not a sprite!";
         }
+        clearstamps() {
+            var x = 0;
+            while (x < this.childElementCount) {
+                if (this.childNodes[x].getAttribute("class") == "stamp") {
+                    this.childNodes[x].remove();
+                }
+                else {
+                    x++;
+                }
+            }
+        }
     },
     sprite: class extends HTMLElement {
         constructor(w, h, x, y, angle, unit_type) {
