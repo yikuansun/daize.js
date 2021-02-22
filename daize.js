@@ -149,6 +149,10 @@ const daize = {
             this.setAttribute("layer", newval);
         }
 
+        movevec(magnitude, direction) {
+            this.x += Math.cos(direction) * magnitude;
+            this.y -= Math.sin(direction) * magnitude;
+        }
         boxcollision(othersprite) {
             return (
                 parseFloat(this.style.top) + parseFloat(this.style.height) >= parseFloat(othersprite.style.top) &&

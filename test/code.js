@@ -56,7 +56,7 @@ function gameLoop() {
             keysdown.x = false; // prevent hold down
         }
     }
-    mysprite.y -= velocity_up;
+    mysprite.movevec(velocity_up, Math.PI / 2);
     requestAnimationFrame(gameLoop);
 }
 
