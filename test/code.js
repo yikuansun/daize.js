@@ -6,6 +6,7 @@ greenimg = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAA
 // create canvas
 mycanvas = new daize.displayCanvas(800, 500, global_unit_type);
 document.body.appendChild(mycanvas);
+mycanvas.style.backgroundImage = "linear-gradient(skyblue, deepskyblue)"; // change background
 
 // create player sprite and add to canvas
 mysprite = new daize.sprite(100, 100, 100, 100, 0, global_unit_type);
