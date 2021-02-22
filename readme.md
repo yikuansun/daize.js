@@ -34,5 +34,6 @@ Sprites have the following attributes:
   
 Sprites have the following methods:  
 `sprite.remove()` - delete the sprite from its displayCanvas.  
+`sprite.movevec(magnitude, direction)` - move `magnitude` units at an angle of `direction` radians.  
 `sprite.boxcollision(othersprite)` - detect if two sprites' bounding boxes are touching.  
 `sprite.addEventListener(type, listener)` - add a `type` event listener which executes function `listener`. Types include onclick, onmouseover, etc.  
