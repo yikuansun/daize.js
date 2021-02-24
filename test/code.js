@@ -52,7 +52,7 @@ function gameLoop() {
         }
         mysprite.y += 1; // push sprite back to level
         //jump
-        if (keysdown.x) {
+        if (keysdown.ArrowUp) {
             velocity_up = 10;
             keysdown.x = false; // prevent hold down
         }
