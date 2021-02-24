@@ -29,7 +29,7 @@ displayCanvases have the following methods:
 ## sprite
 > objects to display within the displayCanvas
 
-create: `mysprite = new daize.sprite(w, h, x, y, angle, unit_type)` where `w` and `h` are the dimensions, `x` and `y` specify the center position of the sprite on the canvas ((0, 0) is the top left corner), and `angle` is the sprite's rotation in radians. See [displayCanvas](#displayCanvas) for info on `unit_type`. To add `mysprite` to a displayCanvas, use `displayCanvas.addsprite(sprite)`.
+create: `mysprite = new daize.sprite(w, h, x, y, angle, unit_type)` where `w` and `h` are the dimensions, `x` and `y` specify the center position of the sprite on the canvas ((0, 0) is the top left corner), and `angle` is the sprite's rotation in radians. See [displayCanvas](#displaycanvas) for info on `unit_type`. To add `mysprite` to a displayCanvas, use `displayCanvas.addsprite(sprite)`.
   
 Sprites have the following attributes:  
 `sprite.x` - the X position of the sprite.  
@@ -46,4 +46,4 @@ Sprites have the following methods:
 `sprite.movevec(magnitude, direction)` - move `magnitude` units at an angle of `direction` radians.  
 `sprite.boxcollision(othersprite)` - detect if two sprites' bounding boxes are touching.  
 `sprite.addEventListener(type, listener)` - add a `type` event listener which executes function `listener`. Types include onclick, onmouseover, etc.  
-`sprite.stamp()` - stamp the image of the sprite onto its [displayCanvas](#displayCanvas).  
+`sprite.stamp()` - stamp the image of the sprite onto its [displayCanvas](#displaycanvas).  
